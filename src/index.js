@@ -38,6 +38,7 @@ class Board extends React.Component {
     const size = 3;
     return (
       <div>
+        {/*Challenge 3*/}
         {Array.from({length: size}, (_, row) => 
           <div className="board-row">
           {Array.from({length: size}, (_, col) => 
@@ -45,6 +46,7 @@ class Board extends React.Component {
           )}
           </div>
         )}
+        {/*Challenge 3*/}
       </div>
     );
   }
@@ -110,7 +112,15 @@ class Game extends React.Component {
     if(winner) {
       status = 'Winner: ' + winner;
     } else {
-      status = 'Next player: '+ (this.state.xIsNext ? 'X' : 'O');
+      /*Challenge 6*/
+      const isNullExist = (value) => value === null;
+      const indexNull = current.squares.findIndex(isNullExist);
+      if(indexNull === -1) {
+        status = 'DRAW!!! No One Wins!'
+      } else {
+        status = 'Next player: '+ (this.state.xIsNext ? 'X' : 'O');
+      }
+      /*Challenge 6*/
     }
 
     return (
