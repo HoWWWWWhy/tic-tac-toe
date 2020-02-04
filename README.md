@@ -10,7 +10,7 @@
 6. ~~When no one wins, display a message about the result being a draw.~~
 
 ## Website
-[howwwwwhy-tic-tac-toe.netlify.com](howwwwwhy-tic-tac-toe.netlify.com)
+[howwwwwhy-tic-tac-toe.netlify.com](https://howwwwwhy-tic-tac-toe.netlify.com)
 
 <br/>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
